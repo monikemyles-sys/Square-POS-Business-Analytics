@@ -1,7 +1,9 @@
-# YumYum BBQ Performance Report — Key Takeaways
+# Power BI: Performance Driver Analysis
 
-## Project Overview
-This Power BI report tracks YumYum BBQ's restaurant performance, covering total revenue, profitability, and operating expenses broken down by menu category, individual item, expense type, and month. It's built as a companion to an earlier Excel-based health report, extending that analysis into an interactive dashboard with DAX-driven measures.
+*Part of the [Square POS Business Analytics](https://github.com/monikemyles-sys/Square-POS-Business-Analytics) project. Companion workstream: see the [Excel Financial Health Assessment](https://github.com/monikemyles-sys/Square-POS-Business-Analytics/tree/main/Excel) for whether the business is healthy — this dashboard looks at what is driving that performance.*
+
+## Objective
+Interactive Power BI business intelligence dashboard identifying the factors driving YumYum BBQ's business performance and profitability — tracking revenue performance, net operating profit, profit margin, fee burden, category revenue, sales volume, and expense distribution using Power Query and DAX.
 
 ## Key Metrics
 
@@ -12,23 +14,47 @@ This Power BI report tracks YumYum BBQ's restaurant performance, covering total 
 | Profit Margin | 19.45% |
 | Fee Burden Ratio | 0.93% |
 
-## Key Insights
+## Dashboard Screenshots
+*(Add screenshots of your Power BI report pages here — export each page as an image from Power BI Desktop with File > Export > Export report pages as image, then drag them into this section on GitHub. Do this before publishing: a dashboard project with no screenshot is the fastest way to lose a recruiter's attention.)*
 
-- **Revenue by category:** Lunch Plates is the leading category at $473,235 in revenue, roughly 144% higher than the next-closest category, Catering, at $193,746.04. Lunch Plates alone account for nearly two-thirds of total revenue, making it the category the business depends on most.
-- **Top items:** Within the top-performing categories, the Two Piece Chicken is the single highest-revenue item at $73,633, followed by Ribs at $36,112 and Rib Tips at $23,741. These three items together point to chicken and rib-based plates as the menu's core revenue drivers.
-- **Expense breakdown:** Walmart inventory is the largest expense category at 25.39% of total costs, followed by general business expenses at 18.9%. Together these two categories makeup nearly 45% of all spending, making them the clearest targets for cost control.
-- **Revenue trend:** Monthly revenue stays largely flat and consistent across the year, with a noticeable uptick around October — worth watching for a seasonal pattern worth planning around in future periods.
-- **Profitability read:** At a 19.45% profit margin and a low 0.93% fee burden ratio, the business is financially healthy overall. The main opportunity for improvement is on the cost side: since Walmart inventory and business expenses are the two largest expense drivers, trimming either one has the clearest path to growing net operating profit further.
+## Project Background
+This dashboard is the Power BI workstream of the Square POS Business Analytics project, focused on performance driver analysis — identifying what is driving YumYum BBQ's revenue, profitability, and cost structure. It uses the same underlying Square POS sales, processing fee, and expense data as the Excel workstream, but is built to investigate a different set of business questions rather than duplicate that dashboard.
 
-## Methodology and Tools
-- **Tools:** Power BI Desktop, DAX measures (Total Revenue, Net Operating Profit, Profit Margin, Category Revenue, Fee Burden Ratio)
-- **Data tables:** Item Sales Summary, Expense Summary, Service Fees, Date Table
-- **Visuals used:** KPI cards, clustered bar charts (category and item), donut chart (expense type), line chart (monthly trend by category), year/category slicers
+## Tools Used
+- Power BI Desktop
+- Power Query
+- Power Pivot / Data Modeling
+- DAX
 
-## Skills Demonstrated
-- Data modeling across related fact and dimension tables
-- DAX measure authoring (profitability and ratio calculations)
-- Dashboard design and KPI definition
-- Business interpretation of restaurant performance data
+## How I Built It
+
+### 1. Data Ingestion & Transformation (Power Query)
+- Loaded and shaped the Item Sales Summary, Expense Summary, Service Fees, and Date Table data for the reporting period.
+- Standardized dates and cleaned category, item, and expense-type fields ahead of modeling.
+
+### Data Modeling
+- Built relationships between the sales, expense, fee, and date tables.
+- Authored DAX measures for Total Revenue, Net Operating Profit, Profit Margin, Category Revenue, and Fee Burden Ratio.
+
+### Dashboard Architecture
+- Designed KPI cards for the four headline metrics.
+- Built clustered bar charts for category- and item-level revenue comparisons.
+- Added a donut chart for the expense-type breakdown and a line chart for the monthly revenue trend.
+- Included year and category slicers for interactive filtering.
+
+## Business Questions Answered
+
+**What factors have the greatest impact on profitability?**
+Expense structure is the biggest lever available. The business already holds a healthy 19.45% profit margin and a low 0.93% fee burden ratio, but Walmart inventory and general business expenses together account for nearly 45% of total costs — making cost management, not fees, the main profitability driver to watch.
+
+**Which categories drive revenue growth?**
+Lunch Plates is the clear driver, generating $473,235 in revenue — roughly 144% higher than the next-closest category, Catering, at $193,746.04. At the item level, the Two Piece Chicken ($73,633), Ribs ($36,112), and Rib Tips ($23,741) are the top three individual contributors.
+
+**How much revenue is being absorbed by fees and expenses?**
+Processing fees are minimal, at a 0.93% fee burden ratio. Operating expenses are more significant: Walmart inventory alone accounts for 25.39% of total costs, with general business expenses adding another 18.9%.
+
+**Where can operational efficiencies be improved?**
+The clearest opportunity is on the cost side — specifically a vendor cost review of Walmart inventory and business expense spending — since revenue is already strong and consistent year over year, aside from a seasonal uptick around October worth planning around.
+
 
 
