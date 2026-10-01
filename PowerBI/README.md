@@ -1,4 +1,4 @@
- #YumYum BBQ Performance Report — Key Takeaways
+# YumYum BBQ Performance Report — Key Takeaways
 
 ## Project Overview
 This Power BI report tracks YumYum BBQ's restaurant performance, covering total revenue, profitability, and operating expenses broken down by menu category, individual item, expense type, and month. It's built as a companion to an earlier Excel-based health report, extending that analysis into an interactive dashboard with DAX-driven measures.
