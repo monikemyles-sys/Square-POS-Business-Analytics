@@ -1,4 +1,4 @@
-# YumYum BBQ-POS-Financial-Dashboard
+# Square-POS-Financial-Dashboard
 
 ## Project Overview
 
