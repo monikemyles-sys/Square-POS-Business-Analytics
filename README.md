@@ -57,7 +57,6 @@ The Power BI dashboard focuses on understanding the factors driving business per
 - Profit Margin
 - Fee Burden
 - Category Revenue
-- Sales Volume by Category
 - Expense Distribution
 
 #### Business Questions
