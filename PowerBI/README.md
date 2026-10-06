@@ -15,7 +15,9 @@ Interactive Power BI business intelligence dashboard identifying the factors dri
 | Fee Burden Ratio | 0.93% |
 
 ## Dashboard Screenshots
-*(Add screenshots of your Power BI report pages here — export each page as an image from Power BI Desktop with File > Export > Export report pages as image, then drag them into this section on GitHub. Do this before publishing: a dashboard project with no screenshot is the fastest way to lose a recruiter's attention.)*
+<img width="1912" height="851" alt="Main screen" src="https://github.com/user-attachments/assets/925b72f6-9663-40b0-8fb4-6f2049b8d903" />
+<img width="1912" height="832" alt="Monthly Rev Trend" src="https://github.com/user-attachments/assets/e1420038-c362-4c04-9ac1-cd277cd6dc0b" />
+<img width="1912" height="827" alt="2022 filter" src="https://github.com/user-attachments/assets/643f8d9b-021a-4733-8025-e9ab75c59f03" />
 
 ## Project Background
 This dashboard is the Power BI workstream of the Square POS Business Analytics project, focused on performance driver analysis — identifying what is driving YumYum BBQ's revenue, profitability, and cost structure. It uses the same underlying Square POS sales, processing fee, and expense data as the Excel workstream, but is built to investigate a different set of business questions rather than duplicate that dashboard.
